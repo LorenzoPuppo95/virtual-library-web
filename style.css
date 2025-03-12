@@ -36,7 +36,7 @@ main {
 }
 
 button {
-    background-color: #8D6E63;
+    background-color: #8E7D4E;
     color: #fff;
     font-family: "Nothing You Could Do", cursive;
     font-size: 16px;
@@ -49,12 +49,12 @@ button {
 }
 
 button:hover {
-    background-color: #6D4C41;
+    background-color: #a58b45;
     transform: translateY(-2px);
 }
 
 button:active {
-    background-color: #5D4037;
+    background-color: #a58b45;
     transform: translateY(2px);
 }
 
@@ -66,8 +66,8 @@ button:focus {
 header {
     font-family: 'Princess Sofia', cursive;
     padding: 20px 0;
-    background: rgb(78,52,46);
-    background: linear-gradient(180deg, rgba(78,52,46,1) 0%, rgba(168,151,138,1) 60%, rgba(239,229,211,1) 100%);
+    background: #8E7D4E;
+    background: linear-gradient(180deg, #8E7D4E 0%, rgba(168,151,138,1) 60%, rgba(239,229,211,1) 100%);
     color: white;
     text-align: center;
     margin-bottom: 20px;
@@ -108,7 +108,7 @@ footer {
     bottom: 0;
     width: 100%;
     background: rgb(78,52,46);
-    background: linear-gradient(0deg, rgba(78,52,46,1) 0%, rgba(168,151,138,1) 60%, rgba(239,229,211,1) 100%);
+    background: linear-gradient(0deg, #8E7D4E 0%, rgb(143, 128, 117) 60%, rgba(239,229,211,1) 100%);
     color: white;
     text-align: center;
     padding: 20px;
@@ -150,7 +150,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    width: 30px;
+    width: 20px;
     height: 100%;
     background: #8E7D4E;
     border-top-left-radius: 12px;
@@ -179,7 +179,7 @@ footer {
 }
 
 .books-container-son h3 {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: bold;
     color: #3E2723;
     margin-top: 30px;
