@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Nothing You Can Do', cursive;
+    font-family: "Nothing You Could Do", cursive;
     background-color: #EFE5D3;
     color: #3E2723;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -23,8 +23,9 @@ body {
 
 main {
     flex: 1;
-    overflow-y: auto;
+    overflow-y: scroll;
     padding-bottom: 40px;
+    scrollbar-width: none;
 }
 
 #button-container {
@@ -37,7 +38,7 @@ main {
 button {
     background-color: #8D6E63;
     color: #fff;
-    font-family: 'Nothing You Can Do', cursive;
+    font-family: "Nothing You Could Do", cursive;
     font-size: 16px;
     padding: 12px 24px;
     border: none;
