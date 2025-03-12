@@ -27,14 +27,24 @@ function render(booksData) {
     container.innerHTML = '';
     booksData.forEach(books => {
         const booksContainer = document.createElement('div');
-        const titleContainer = createTextElement('h2', books.title + "-" + books.author);
-        const genreContainer = createTextElement('h4', "Genere: " + books.category);
-        const infoContainer = createTextElement('h4', 'Published in: ' + books.yop + ', ISBN: ' + books.isbn);
         booksContainer.classList.add('books-container-son');
+        const titleAuthorGroup = document.createElement('div');
+        titleAuthorGroup.classList.add('title-author-group');
+        const titleContainer = createTextElement('h2', books.title);
+        const authorContainer = createTextElement('h3', books.author);
+        titleAuthorGroup.appendChild(titleContainer);
+        titleAuthorGroup.appendChild(authorContainer);
+        const genreInfoCodeGroup = document.createElement('div');
+        genreInfoCodeGroup.classList.add('genre-info-code-group');
+        const genreContainer = createTextElement('h4', "Genere: " + books.category);
+        const infoContainer = createTextElement('h4', 'Pubblicato nel ' + books.yop);
+        const codeContainer = createTextElement('h4', 'ISBN: ' + books.isbn);
+        genreInfoCodeGroup.appendChild(genreContainer);
+        genreInfoCodeGroup.appendChild(infoContainer);
+        genreInfoCodeGroup.appendChild(codeContainer);
+        booksContainer.appendChild(titleAuthorGroup);
+        booksContainer.appendChild(genreInfoCodeGroup);
         container.appendChild(booksContainer);
-        booksContainer.appendChild(titleContainer);
-        booksContainer.appendChild(genreContainer);
-        booksContainer.appendChild(infoContainer);
     });
 }
 
