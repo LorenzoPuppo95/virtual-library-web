@@ -127,6 +127,7 @@ footer {
 
 .books-container-son {
     width: calc(33.33% - 20px);
+    max-width: 400px;
     height: 450px;
     padding: 20px;
     background-color: #fff;
